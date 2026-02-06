@@ -39,6 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+*.traineddata
+
 
 /app/generated/prisma
 
@@ -46,3 +48,5 @@ uploads/
 node_modules/
 backend/node_modules/
 .env
+test-ocr.js
+
