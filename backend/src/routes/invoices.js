@@ -6,10 +6,13 @@ const {
   createInvoice,
   getInvoices,
   uploadInvoiceFile,
+  runInvoiceOCR,
 } = require("../controllers/invoicesController");
 
 router.post("/", createInvoice);
 router.get("/", getInvoices);
+router.post("/:id/ocr", runInvoiceOCR);
+
 
 // Upload invoice file
 router.post(
